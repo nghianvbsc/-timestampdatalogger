@@ -47,6 +47,7 @@ if (isset($_POST) && !empty($_POST)) {
 
     $mail = new PHPMailer;
     $mail->CharSet = 'UTF-8';
+    $mail->SMTPDebug = 1;
     $mail->isSMTP();
     $mail->Host = 'smtp.gmail.com';
     $mail->Port = 587;
